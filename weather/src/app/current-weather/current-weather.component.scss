@@ -6,6 +6,10 @@
    margin-bottom: 0;
 }
 .centered {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    text-align: center;
 }
 .col-3 {
@@ -23,7 +27,9 @@
    text-transform: uppercase;
 }
 .icon {
-   margin-right: 1em;
+   margin-right: -1em;
+   position: relative;
+   right: 1em;
    width: 3em;
 }
 .location {

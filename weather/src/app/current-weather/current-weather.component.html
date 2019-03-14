@@ -1,0 +1,10 @@
+<div class="col-3" *ngIf="current">
+   <div class="centered">
+      <p class="aligned temperature"><img class="icon" [src]='current.image'>{{current.temperature | number:'1.0-0'}}ºC</p>
+      <p class="desc">{{current.description}}</p>
+   </div>
+   <div class="centered">
+      <h2 class="location">{{current.city}}, {{current.country}}</h2>
+      <p class="date">{{current.date | date:'fullDate'}}</p>
+   </div>
+</div>

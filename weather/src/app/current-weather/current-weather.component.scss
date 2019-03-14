@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables/_all';
+.aligned {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+}
+.centered {
+   text-align: center;
+}
+.col-3 {
+   width: 25%;
+}
+.date, .desc, .location, .temperature {
+   color: $color3;
+}
+.date {
+   font-size: .85em;
+   font-style: italic;
+}
+.desc {
+   font-size: .85em;
+   text-transform: uppercase;
+}
+.icon {
+   margin-right: 1em;
+   width: 3em;
+}
+.location {
+   margin-bottom: 0.5em;
+}

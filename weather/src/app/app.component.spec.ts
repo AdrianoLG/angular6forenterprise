@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component';
+import { WeatherService } from './weather/weather.service';
+import { WeatherServiceFake } from './weather/weather.service.fake';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,8 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        CurrentWeatherComponent
       ],
+      providers: [{ provide: WeatherService, useClass: WeatherServiceFake }],
     }).compileComponents();
   }));
 
@@ -30,6 +35,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to weather!');
+    expect(compiled.querySelector('h1').textContent).toContain('LocalCast Weather');
   });
 });

@@ -8,7 +8,7 @@
          <div fxFlex="60%" fxFlexAlign="center">
             <img class="icon" [src]='current.image'>
          </div>
-         <p  fxFlex fxFlexAlign="center"  class="temperature mat-display-2 right">{{current.temperature | number:'1.0-0'}}ºC</p>
+         <p fxFlex fxFlexAlign="center"  class="temperature mat-display-3 right">{{current.temperature | number:'1.0-0'}}<span class="mat-display-1 unit">ºC</span></p>
       </div>
       <div fxLayout="row">
          <p class="desc mat-caption" fxFlex fxLayoutAlign="center">{{current.description}}</p>

@@ -1,37 +1,32 @@
 @import '../../assets/scss/variables/_all';
-.aligned {
-   align-items: center;
-   display: flex;
-   justify-content: center;
+h2 {
    margin-bottom: 0;
 }
-.centered {
-   align-items: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
+.date, .location {
+   color: $accentD;
 }
-.col-3 {
-   width: 25%;
+.desc {
+   color: $accent;
 }
-.date, .desc, .location, .temperature {
-   color: $color3;
+.desc, .temperature {
+   color: $accentD;
 }
 .date {
-   font-size: .85em;
    font-style: italic;
 }
 .desc {
-   font-size: .85em;
    text-transform: uppercase;
 }
 .icon {
-   margin-right: -1em;
-   position: relative;
-   right: 1em;
-   width: 3em;
+   margin-right: .5em;
+   width: 5em;
 }
-.location {
-   margin-bottom: 0.5em;
+.padBot {
+   padding-bottom: .5em;
+}
+.right {
+   text-align: right;
+}
+.temperature {
+   margin-bottom: 0;
 }

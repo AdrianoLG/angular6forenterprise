@@ -47,7 +47,7 @@ export class WeatherService implements IWeatherService {
       city: data.name,
       country: data.sys.country,
       date: data.dt * 1000,
-      image: `../../assets/img/weather-icons/${data.weather[0].icon}.svg`,
+      image: `assets/img/weather-icons/${data.weather[0].icon}.svg`,
       temperature: this.convertKelvinToCelsius(data.main.temp),
       description: data.weather[0].description
     };

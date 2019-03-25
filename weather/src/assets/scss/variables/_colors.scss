@@ -1,5 +1,10 @@
-$color1: #204E5F;
-$color2: #EDF7F5;
-$color3: #B7D7D8;
-$color4: #FFC6A8;
-$color5: #FF8984;
+@import '~@angular/material/theming';
+
+$localcast-primary: mat-palette($mat-yellow, 300);
+$localcast-accent: mat-palette($mat-blue-grey, 800);
+$primary: mat-color($localcast-primary);
+$primaryL: mat-color($localcast-primary, lighter);
+$primaryD: mat-color($localcast-primary, darker);
+$accent: mat-color($localcast-accent);
+$accentL: mat-color($localcast-accent, lighter);
+$accentD: mat-color($localcast-accent, darker);

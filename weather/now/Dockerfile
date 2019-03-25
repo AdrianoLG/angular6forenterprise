@@ -1,0 +1,1 @@
+FROM adrianolorenzo/weatherapp:1.0.0

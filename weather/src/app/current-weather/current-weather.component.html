@@ -1,10 +1,17 @@
-<div class="col-3" *ngIf="current">
-   <div class="centered">
-      <p class="aligned temperature"><img class="icon" [src]='current.image'>{{current.temperature | number:'1.0-0'}}ºC</p>
-      <p class="desc">{{current.description}}</p>
-   </div>
-   <div class="centered">
-      <h2 class="location">{{current.city}}, {{current.country}}</h2>
-      <p class="date">{{current.date | date:'fullDate'}}</p>
+<div *ngIf="current">
+   <div class="padBot">
+      <div fxLayout="row">
+         <h2 fxFlex="60%" fxFlexAlign="center" class="location mat-subheading-2">{{current.city}}, {{current.country}}</h2>
+         <p fxFlex fxFlexAlign="end" class="date mat-caption right">{{current.date | date:'EEEE MMM d'}}{{getOrdinal(current.date)}}</p>
+      </div>
+      <div fxLayout="row">
+         <div fxFlex="60%" fxFlexAlign="center">
+            <img class="icon" [src]='current.image'>
+         </div>
+         <p  fxFlex fxFlexAlign="center"  class="temperature mat-display-2 right">{{current.temperature | number:'1.0-0'}}ºC</p>
+      </div>
+      <div fxLayout="row">
+         <p class="desc mat-caption" fxFlex fxLayoutAlign="center">{{current.description}}</p>
+      </div>
    </div>
 </div>

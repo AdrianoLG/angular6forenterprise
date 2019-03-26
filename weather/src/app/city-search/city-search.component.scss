@@ -1,0 +1,12 @@
+@import '../../assets/scss/variables/_all';
+.mat-input-element {
+   caret-color: $accent;
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+   border-color: $accent;
+}
+mat-icon {
+   padding-right: .5em;
+   position: relative;
+   top: .25em;
+}

@@ -6,6 +6,8 @@ import { WeatherService } from './weather/weather.service';
 import { WeatherServiceFake } from './weather/weather.service.fake';
 import { MaterialModule } from './material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CitySearchComponent } from './city-search/city-search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -13,11 +15,14 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         MaterialModule,
-        NoopAnimationsModule
+        NoopAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule
       ],
       declarations: [
         AppComponent,
-        CurrentWeatherComponent
+        CurrentWeatherComponent,
+        CitySearchComponent
       ],
       providers: [{ provide: WeatherService, useClass: WeatherServiceFake }],
     }).compileComponents();
@@ -31,8 +36,9 @@ describe('AppComponent', () => {
 
   it(`should have as title 'weather'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('weather');
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toEqual('LocalCast Weather');
   });
 
   it('should render title in a h1 tag', () => {

@@ -1,8 +1,8 @@
 <div *ngIf="current">
    <div class="padBot">
       <div fxLayout="row">
-         <h2 fxFlex="60%" fxFlexAlign="center" class="location mat-subheading-2">{{current.city}}, {{current.country}}</h2>
-         <p fxFlex fxFlexAlign="end" class="date mat-caption right">{{current.date | date:'EEEE MMM d'}}{{getOrdinal(current.date)}}</p>
+         <h2 fxFlex="60%" fxFlexAlign="start" class="location mat-title">{{current.city}}, {{current.country}}</h2>
+         <p fxFlex fxFlexAlign="start" class="date mat-subheading-1 mb0 right">{{current.date | date:'EEEE'}}<br>{{current.date | date:'MMM d'}}{{getOrdinal(current.date)}}</p>
       </div>
       <div fxLayout="row">
          <div fxFlex="60%" fxFlexAlign="center">

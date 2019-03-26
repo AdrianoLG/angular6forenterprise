@@ -1,7 +1,12 @@
-<mat-toolbar color="primary" fxLayout="column" fxLayoutAlign="start">
-	<h1>LocalCast Weather</h1>
-	<p class="mat-caption">Your city, your forecast, right now!</p>
+<mat-toolbar color="primary" fxLayoutAlign="start center">
+	<h1 class="mat-headline">LocalCast Weather</h1>
 </mat-toolbar>
+<div fxLayoutAlign="center">
+	<p class="mat-subheading-2">Your city, your forecast, right now!</p>
+</div>
+<div fxLayoutAlign="center" class="mb2">
+	<app-city-search></app-city-search>
+</div>
 <div fxLayout="row" fxLayoutAlign="center">
 	<mat-card fxFlex="18.75em" class="bgColor">
 		<mat-card-header class="mat-typography" fxLayoutAlign="center">

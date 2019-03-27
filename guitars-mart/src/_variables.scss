@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+$guitarmart-primary: mat-palette($mat-teal, 800);
+$guitarmart-accent: mat-palette($mat-lime, 200);
+$guitarmart-warn: mat-palette($mat-purple, A700);
+$primary: mat-color($guitarmart-primary);
+$primaryD: mat-color($guitarmart-primary, darker);
+$primaryL: mat-color($guitarmart-primary, lighter);
+$accent: mat-color($guitarmart-accent);
+$accentL: mat-color($guitarmart-accent, lighter);
+$accentD: mat-color($guitarmart-accent, darker);
+$warn: mat-color($guitarmart-warn);
+$warnL: mat-color($guitarmart-warn, lighter);
+$warnD: mat-color($guitarmart-warn, darker);

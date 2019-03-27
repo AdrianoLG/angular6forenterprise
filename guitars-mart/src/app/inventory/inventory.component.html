@@ -1,0 +1,11 @@
+<mat-toolbar color="accent" class="space-between">
+  <div>
+    <a mat-button routerLink="/inventory/home" routerLinkActive="active-link">Inventory Dashboard</a>
+    <a mat-button routerLink="/inventory/stock-entry" routerLinkActive="active-link">Stock Entry</a>
+    <a mat-button routerLink="/inventory/products" routerLinkActive="active-link">Products</a>
+    <a mat-button routerLink="/inventory/categories" routerLinkActive="active-link">Categories</a>
+  </div>
+</mat-toolbar>
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <router-outlet></router-outlet>
+</div>

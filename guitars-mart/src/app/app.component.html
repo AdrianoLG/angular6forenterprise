@@ -1,4 +1,14 @@
-<mat-toolbar color="primary" fxLayoutAlign="start center">
-    <i class="material-icons mr-xs">music_video</i>
-    <h1 class="mat-headline">GuitarMart</h1>
+<mat-toolbar color="primary" fxLayoutAlign="space-between center">
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <button mat-icon-button color="accent"><mat-icon>menu</mat-icon></button>
+    <a routerLink="/home" fxLayout="row" fxLayoutAlign="center center" class="home">
+      <mat-icon svgIcon="guitar" class="svgIcon"></mat-icon>
+      <h1 class="mat-headline">GuitarsMart</h1>
+    </a>
+  </div>
+  <div>
+    <button mat-icon-button color="accent" routerLink="/user/profile" matTooltip="Profile" aria-label="User Profile"><mat-icon>account_circle</mat-icon></button>
+    <button mat-icon-button color="accent" routerLink="/user/logout" matTooltip="Logout" aria-label="Logout"><mat-icon>lock_open</mat-icon></button>
+  </div>
 </mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,4 +1,27 @@
 @import '../_variables.scss';
+mat-toolbar {
+   a {
+      color: $accent;
+      text-decoration: none;
+   }
+}
+.accentC {
+   color: $accent;
+}
+.home {
+   margin-left: 1em;
+}
+.logo-icon {
+   fill: $accent;
+   margin-left: 1em;
+}
+.mtb2 {
+   margin: 2em 0;
+}
 .mr-xs {
    margin-right: .5em;
+}
+.svgIcon {
+   height: 2em;
+   width: 2em;
 }

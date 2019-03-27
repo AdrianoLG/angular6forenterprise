@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import '_variables.scss';
-body {
-   background: url(assets/img/bg.jpg);
-   background-size: cover;
-   background-position: center;
+@import 'variables';
+.container {
+   box-sizing: border-box;
+   max-width: 75em;
+   padding: 0 1em;
+}
+.mtb10r {
+   margin: 10rem 0;
 }
